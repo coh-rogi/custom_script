@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         youtube live comment convert
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/coh-rogi/custom_script
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  外国語コメントを日本語に翻訳
+// @author       coh-rogi
 // @match        https://www.youtube.com/live_chat?*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @grant        none
 // ==/UserScript==
+
 (function() {
   let mutationObserver = new MutationObserver(function() {
     if (document.querySelector("#item-scroller #items").childNodes.length) {
